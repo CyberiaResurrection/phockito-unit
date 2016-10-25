@@ -2,7 +2,7 @@
 
 namespace PhockitoUnit;
 
-use Phockito;
+use Phockito\Phockito;
 
 use PhpDocReader\PhpDocReader;
 use ReflectionClass;
@@ -11,7 +11,6 @@ class PhockitoUnitTestCase extends \PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        Phockito::include_hamcrest();
         $this->generateMocksAndSpies();
     }
 
